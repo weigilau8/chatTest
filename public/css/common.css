@@ -1,0 +1,97 @@
+/*------------------------------------------------------------
+ブラウザ固有のCSSをリセット
+-------------------------------------------------------------*/
+
+body,div,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,p,blockquote{
+	margin: 0;
+	padding: 0;
+}
+
+address,caption,cite,code,dfn,h1,h2,h3,h4,var{
+	font-style: normal;
+	font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6,small{
+	font-size: 100%;
+	font-weight: normal;
+}
+
+fieldset,img,abbr{ border: 0; }
+caption{ text-align: left; }
+q:before,q:after{ content: ''; }
+a{ text-decoration: none; }
+img{
+	border: none;
+	vertical-align: bottom;
+}
+
+input,
+textarea,
+select{
+	font-size: 1em;
+}
+
+
+/*--------------------------------------------------------
+レイアウトの初期設定
+-------------------------------------------------------*/
+
+html,body {
+	height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#container{
+	position: relative;
+}
+
+#global-menu li,
+#breadcrumbs li,
+#top-menu li,
+#sidebar-in li,
+#footer-in li,
+#footer-banner li{
+	list-style: none;
+}
+
+/*--------------------------------------------------------
+プリント対応
+-------------------------------------------------------*/
+
+@media print {
+  section { display: block; page-break-before: always; }
+  pre code {page-break-after: always;}
+  @page {
+margin-top:0.4cm;
+margin: 0.5cm;
+}
+p a, code, pre {
+word-wrap: break-word;
+}
+img {display:none;}
+ 
+pre a[href]:after {
+    content: ""; }
+ 
+ 
+pre abbr[title]:after {
+    content: ""; }
+ 
+pre   .ir a:after,
+  pre a[href^="javascript:"]:after,
+  pre a[href^="#"]:after {
+    content: ""; }
+ 
+.no-print {display:none;}
+ 
+}

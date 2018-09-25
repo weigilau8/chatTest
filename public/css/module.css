@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Standard module */
+/* Author: H.Nakazawa */
+
+/*------------------------------------------------------------------------
+BR Clear Module
+--------------------------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+.clearfix {
+    min-height: 1px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/*----------------------------
+Font
+------------------------------*/
+.px9 {
+	font-size: 9px;
+}
+.px10 {
+	font-size: 10px;
+}
+.px14 {
+	font-size: 14px;
+}
+.px16 {
+	font-size: 16px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/*------------------------------------
+Spacer
+--------------------------------------*/
+.mt5 {
+	margin-top : 5px;
+}
+.mt7 {
+	margin-top : 7px;
+}
+.mt10 {
+	margin-top : 10px;
+}
+.mt15 {
+	margin-top : 15px;
+}
+.mt20 {
+	margin-top : 20px;
+}
+.mt25 {
+	margin-top : 25px;
+}
+.mt30 {
+	margin-top : 30px;
+}
+.mt35 {
+	margin-top : 35px;
+}
+.mt40 {
+	margin-top : 40px;
+}
+.mt50 {
+	margin-top : 50px;
+}
+.mt60 {
+    margin-top : 60px;
+}
+.mt70 {
+    margin-top : 70px;
+}
+.mt80 {
+    margin-top : 80px;
+}
+.mt90 {
+    margin-top : 90px;
+}
+
+.mb5 {
+	margin-bottom : 5px;
+}
+.mb7 {
+	margin-bottom : 7px;
+}
+.mb10 {
+	margin-bottom : 10px;
+}
+.mb15 {
+	margin-bottom : 15px;
+}
+.mb20 {
+	margin-bottom : 20px;
+}
+.mb25 {
+	margin-bottom : 25px;
+}
+.mb30 {
+	margin-bottom : 30px;
+}
+.mb35 {
+	margin-bottom : 35px;
+}
+.mb40 {
+	margin-bottom : 40px;
+}
+.mb50 {
+	margin-bottom : 50px;
+}
+.mb60 {
+    margin-bottom : 60px;
+}
+.mb70 {
+    margin-bottom : 70px;
+}
+.mb80 {
+    margin-bottom : 80px;
+}
+.mb90 {
+    margin-bottom : 90px;
+}
+
+@media screen and (max-width: 640px) {
+    .mb20 {
+        margin-bottom : 0px;
+    }
+    .mb80 {
+        margin-bottom : 40px;
+    }
+}

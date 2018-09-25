@@ -1,0 +1,10 @@
+#map_widget {
+	box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+	background-color: white;
+	text-align: left;
+	font-size: 13px;
+	font-family: Roboto, Arial;
+	margin: 15px;
+	padding: 10px;
+	width: 300px;
+}

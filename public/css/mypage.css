@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Author: H.Nakazawa */
+
+@media print {
+	body {
+		-webkit-print-color-adjust: exact;
+	}
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th {
+	text-align: left;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*----------------------------------
+基本設定
+-----------------------------------*/
+
+.my_page {
+
+}
+
+.login_content {
+	padding-top: 85px;
+
+}
+
+.my_page #header_sp {
+	height: 60px;
+}
+
+.my_page #header_sp h1 {
+	margin: 10px 0 0 10px;
+}
+
+.drawer-open .my_page #header_sp .drawer-nav {
+	top: 60px !important;
+	background: none;
+	background-color: #fff;
+}
+
+.my_page #header_sp .drawer-toggle {
+	margin-top: 7px;
+}
+
+.my_page #header_sp .drawer-nav li {
+	color: #000;
+}
+
+.my_page #header_sp .drawer-nav li a {
+	color: #000;
+}
+
+@media screen and (max-width: 640px) {
+	.login_content h2 {
+		font-size: 20px;
+	}
+
+}
+
+/*ログインユーザ*/
+#in_user {
+	text-align: right;
+	float: right;
+}
+
+#in_name {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	height: 60px;
+	font-size: 20px;
+}
+
+/*----------------------------------
+インデックス
+-----------------------------------*/
+
+.mymenu {
+	height: 100vh;
+}
+
+.mymenu .col4 li {
+	width: 15.7%;
+	padding: 25px;
+	margin: 5px;
+	background: #fff;
+	object-fit: cover;
+	-webkit-box-shadow: 0 2px 5px 0 #999999;
+	box-shadow: 0 2px 5px 0 #999999;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.mymenu .col4 li a i {
+	display: block;
+	font-size: 80px;
+	margin-bottom: 25px;
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+	.mymenu .col4 li a i {
+		display: block;
+		font-size: 55px;
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px){
+	.mymenu .col4 li a i {
+		display: block;
+		font-size: 70px;
+		margin-bottom: 25px;
+	}
+}
+.mymenu .col4 li a:hover {
+	color: #999;
+}
+
+@media screen and (max-width: 640px) {
+	.mymenu .col4 li {
+		width: 31%;
+		padding: 10px;
+		margin-left: 1%;
+		margin-right: 1%;
+		font-size: 11px;
+	}
+
+	.mymenu .col4 li a i {
+		margin-bottom: 10px;
+	}
+}
+
+/*----------------------------------
+ユーザー情報
+-----------------------------------*/
+
+.login_content.user_edit {
+
+}
+
+.login_content.user_edit .box {
+	text-align: left;
+}
+
+.login_content.user_edit .box .mb20 {
+	margin-bottom: 10px;
+}
+
+.login_content.user_edit .box .mb20.birth {
+	width: 31.33333%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width: 100%;
+	height: 43px;
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 25px;
+	border: 1px solid #443e3a;
+	background: #fff;
+	border-radius: 0 0 0 0;
+}
+
+#dt_icon {
+	border-radius: 0 0 0 0;
+}
+
+#datepicker-startview {
+	margin-bottom: 45px;
+}
+
+.login_content.user_edit .box button[type="submit"] {
+	display: block;
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	.login_content.user_edit .box button[type="submit"] {
+		margin: 0px;
+	}
+}
+
+#sbtn {
+	margin: 0px;
+}
+
+/*----------------------------------
+お気に入り
+-----------------------------------*/
+
+.login_content.user_edit {
+
+}
+
+/*----------------------------------
+来店履歴
+-----------------------------------*/
+
+.login_content.rireki {
+
+}
+
+.login_content.rireki .tab_area {
+	left: 0;
+	right: 0;
+	width: 1165px;
+	color: #000;
+	margin: 0 auto 0 auto;
+	padding: 10px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+.login_content.rireki .tab_area span {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.login_content.rireki .tab_area span label {
+	color: #000;
+	border: solid 1px #000;
+	padding: 8px 25px;
+	border-radius: 0 0 0 0;
+	cursor: pointer;
+}
+
+.login_content.rireki .tab_area span label.current {
+	background-color: #000;
+	color: #fff;
+}
+
+.login_content.rireki #table01 thead td {
+	background-color: #083336;
+	color: #fff;
+}
+
+.login_content.rireki #table01 tbody td, .login_content.rireki #table01 tbody th {
+	text-align: center;
+	padding: 10px 10px 10px 0em;
+}
+
+.login_content.rireki #table02 thead td {
+	background-color: #083336;
+	color: #fff;
+}
+
+.login_content.rireki #table02 tbody td, .login_content.rireki #table02 tbody th {
+	text-align: center;
+	padding: 10px 10px 10px 0em;
+}
+
+.table_rireki {
+	display:none;
+}
+
+.table_rireki.active {
+	display: table;
+}
+
+.pagenavi {
+	display:none;
+}
+
+.pagenavi.active {
+	display: inline;
+}
+
+.pagenavi span {
+	color: #04535d;
+}
+
+.pagenavi span:hover {
+	border-color: #000;
+	cursor: pointer;
+}
+
+.pagenavi span:hover.current {
+	border-color: #BFBFBF;
+	cursor: default;
+}
+
+.tbody_yet {
+	display:none;
+}
+
+.tbody_yet.active {
+	display: table-row-group;
+}
+
+.tbody_fin {
+	display:none;
+}
+
+.tbody_fin.active {
+	display: table-row-group;
+}
+
+@media screen and (max-width: 640px) {
+
+	.login_content.rireki .tab_area {
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	.login_content.rireki .tab_area span {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.login_content.rireki .tab_area span label {
+		display: block;
+	}
+
+	.login_content.rireki .content02.table_area {
+		width: 100%;
+		overflow-x: scroll;
+	}
+
+	.login_content.rireki #table01 {
+		width: 700px;
+	}
+	.login_content.rireki #table02 {
+		width: 700px;
+	}
+}
+
+/*----------------------------------
+ポイント購入
+-----------------------------------*/
+
+@media screen and (max-width: 640px) {
+
+	.login_content.rireki .content02.pt_area {
+		width: 100%;
+	}
+
+	.login_content.rireki .content02.pt_area #table02 {
+		width: 100%;
+
+	}
+
+}
+
+/*----------------------------------
+全体レイアウト
+-----------------------------------*/
+
+@media screen and (max-width: 640px) {
+
+}
+
+#footer {
+	background: none;
+}
+
